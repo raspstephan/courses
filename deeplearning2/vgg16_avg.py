@@ -35,7 +35,7 @@ def VGG16_Avg(include_top=True, weights='imagenet',
                                       default_size=224,
                                       min_size=48,
                                       data_format='I dont know',
-                                      include_top=include_top)
+                                      require_flatten=include_top)
 
     if input_tensor is None:
         img_input = Input(shape=input_shape)
